@@ -77,8 +77,8 @@ public:
     node_.param("white_balance", white_balance_, 4000);
 
     // load the camera info
-    node_.param("camera_frame_id", img_.header.frame_id, std::string("head_camera"));
-    node_.param("camera_name", camera_name_, std::string("head_camera"));
+    node_.param("camera_frame_id", img_.header.frame_id, std::string("elp-usb8mp02g-l36"));
+    node_.param("camera_name", camera_name_, std::string("elp-usb8mp02g-l36"));
     node_.param("camera_info_url", camera_info_url_, std::string(""));
     cinfo_.reset(new camera_info_manager::CameraInfoManager(node_, camera_name_, camera_info_url_));
 
